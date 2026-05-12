@@ -22,73 +22,88 @@
 
 **And-IDE** is a powerful, lightweight Integrated Development Environment (IDE) built specifically for Android. It allows you to build, test, and preview web projects (HTML, CSS, JS, PHP) and manage SQL databases entirely from your mobile device. 
 
-Perfect for developers who need to code while traveling, students learning web development, or professionals performing quick hotfixes without a laptop.
-
 ---
 
 ## 📲 How to Install on Android
 
-You can install And-IDE directly on your phone without needing a computer or a GitHub account.
+To install this app without cloning the code or using a computer:
 
-1.  **Download the APK:** Go to the [Releases](https://github.com/Jemmy09/And-IDE/releases) page of this repository.
-2.  **Download Latest Version:** Click on the `.apk` file to download it to your phone.
-3.  **Enable Unknown Sources:** If prompted, allow your browser to "Install unknown apps" (this is standard for apps downloaded outside the Play Store).
-4.  **Install:** Open the downloaded file and tap **Install**.
-5.  **Open And-IDE:** Launch the app and start coding!
-
----
-
-## 📖 Full Usage Guide
-
-And-IDE makes mobile development easy. Here is how to use the core features:
-
-### 🌐 Web Development (HTML, CSS, JavaScript)
-1.  **Create a File:** Tap the **+** icon in the Sidebar and name it `index.html`.
-2.  **Write Code:** Use the editor to type your HTML. 
-    *   *Tip:* Use the **SNIPPETS** button for quick boilerplate code.
-3.  **Style it:** Create a `style.css` file and link it in your HTML.
-4.  **Preview:** Tap the **RUN** button. A split-screen or full-screen preview will appear showing your website live.
-
-### 🐘 PHP Development
-And-IDE features a built-in PHP runner for local testing.
-1.  **File Setup:** Create a file with a `.php` extension.
-2.  **Coding:** Use standard PHP tags: `<?php echo "Hello World"; ?>`.
-3.  **Execution:** Tap **RUN**. The app processes the PHP logic and displays the output in the integrated browser.
-
-### 🗄️ Database Management (SQL)
-Manage your data offline using the powerful SQL module.
-1.  **Open Database:** Swipe the Sidebar and select **Database**.
-2.  **Create Tables:** Use the **Web Dev Assistant** to quickly create a `users` or `products` table.
-3.  **Run Queries:** Type your SQL (e.g., `SELECT * FROM users`) and tap **Execute**. The results will appear in a professional table view.
-4.  **PHP Integration:** Use standard `mysqli` or `PDO` style commands in your PHP files to interact with this local database.
-
-### 🤖 AI Assistance (DDee)
-If you are stuck or have a bug:
-1.  **Ask DDee:** Tap the **Chat** icon.
-2.  **Explain Code:** Highlight a piece of code in the editor, long-press, and select **Explain Code**. DDee will open and tell you exactly what that code does.
-3.  **Auto-Fix:** Ask DDee to "Fix my PHP syntax" or "Generate a CSS navigation bar."
+1.  **Visit Releases:** Go to the [Releases](https://github.com/Jemmy09/And-IDE/releases) tab on this GitHub page.
+2.  **Download APK:** Download the latest `And-IDE.apk` file.
+3.  **Install:** Open the file on your Android phone. If prompted, "Allow installation from unknown sources."
+4.  **Start Coding:** Launch the app and enjoy!
 
 ---
 
-## 🛠 Features for Pros
+## 📖 Full Usage Guide (Complete)
 
-*   **Multi-Tab Support:** Open multiple files and switch between them instantly.
-*   **Code Formatting:** One tap to clean up and indent your code.
-*   **Global Search:** Find any text across all your files.
-*   **Project Export:** Export your entire project as a `.ZIP` file to upload to a real server later.
-*   **Offline First:** No internet? No problem. The editor and database work 100% offline.
+### 1. 🌐 HTML & CSS (The Structure)
+Create an `index.html` file and a `style.css` file. 
+**Example Code:**
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello from And-IDE!</h1>
+    <p>This was built on my phone.</p>
+</body>
+</html>
+```
+```css
+/* style.css */
+body { background: #f0f0f0; text-align: center; font-family: sans-serif; }
+h1 { color: #3DDC84; }
+```
+
+### 2. ✨ JavaScript (The Logic)
+Add interactivity to your pages by creating a `script.js` file.
+**Example Code:**
+```javascript
+function greet() {
+    alert("Welcome to And-IDE!");
+}
+document.querySelector('h1').onclick = greet;
+```
+
+### 3. 🐘 PHP (Server-Side)
+And-IDE includes a local PHP interpreter. Create a `test.php` file.
+**Example Code:**
+```php
+<?php
+  $name = "Developer";
+  echo "<h1>Welcome, $name!</h1>";
+  echo "Current Server Time: " . date("h:i:sa");
+?>
+```
+
+### 🗄️ 4. SQL (Database)
+Use the SQL module to manage data locally. You can execute queries directly:
+**Example Commands:**
+*   **Create Table:** `CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT);`
+*   **Insert Data:** `INSERT INTO users (name) VALUES ('Jemmy');`
+*   **View Data:** `SELECT * FROM users;`
 
 ---
 
-## 🔒 Security & Privacy
-
-*   **Your Code, Your Device:** All files are stored locally.
-*   **Protected Files:** Sensitive configuration files (like API keys and Firebase settings) are strictly ignored by Git to ensure your environment remains private.
-*   **No Tracking:** We don't collect your code or personal data.
+## 🤖 AI Assistant (DDee)
+If you get an error in your code, don't worry!
+*   **Explain Code:** Highlight your code and ask DDee, "What is wrong with this PHP loop?"
+*   **Generator:** Ask "Generate a responsive navigation bar using CSS Grid."
 
 ---
 
-## 👋 About the Developer
-Created by **Jemmy Francisco**. Built for the community to empower mobile developers worldwide.
+## 🔒 Security & Developer Protection
+*   **Privacy:** All sensitive API keys and Firebase configurations are **hidden** from the public repository using `.gitignore`.
+*   **Ownership:** This code is the intellectual property of **Jemmy09**. External developers can view the code but cannot modify your official release.
+
+---
+
+## 👋 About the Creator
+**Jemmy Francisco** (Jemmy09)
+Building tools to make mobile development accessible to everyone.
 
 **Happy Coding!** 🚀
