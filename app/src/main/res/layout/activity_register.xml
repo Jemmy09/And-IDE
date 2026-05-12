@@ -37,7 +37,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Start your professional coding journey"
+                android:text="Start your coding journey"
                 android:textColor="@color/pro_on_surface_dim"
                 android:textSize="14sp"
                 android:layout_marginBottom="32dp"/>
