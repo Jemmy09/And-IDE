@@ -34,7 +34,7 @@
     <string name="btn_website">Website</string>
     <string name="btn_facebook">Facebook</string>
 
-    <!-- Tutorial Activity Updated - Full Professional Guide -->
+    <!-- Tutorial Activity Updated - Full Guide -->
     <string name="tutorial_header">🚀 Master And-Ide</string>
     <string name="tutorial_subtitle">The Ultimate Step-by-Step Guide for New Developers</string>
 
@@ -42,7 +42,7 @@
     <string name="tutorial_section_1_text">Your workspace is designed for speed. Here is what the icons at the top do:\n\n• <b>Menu (☰):</b> Your "Command Center". Switch between the Editor, Database, and AI Chat.\n• <b>Save (💾):</b> Instantly saves your progress to your phone.\n• <b>Open (📂):</b> Import any .php, .html, or .js file from your device.\n• <b>Share (📤):</b> Send your current code to friends or colleagues via email or social apps.\n• <b>Tabs:</b> Just like a browser! Click any tab at the top to switch between multiple open files without losing your place.</string>
 
     <string name="tutorial_section_2_title">🛠️ 2. The Powerful Action Bar</string>
-    <string name="tutorial_section_2_text">Look at the buttons right above your keyboard—these are your "Superpowers":\n\n• <b>FORMAT:</b> Tidy up messy code. It aligns everything perfectly so it looks professional.\n• <b>SNIPPETS:</b> Need a shortcut? Click this for pre-written pieces of code (like forms or tables) to save time.\n• <b>COMPILE:</b> Scans your code for "typos" or errors before you run it.\n• <b>RUN:</b> The most important button! It launches a live preview so you can see your website working in real-time.\n• <b>HISTORY:</b> Made a mistake? Go back in time! This shows your previous versions so you can undo any errors.</string>
+    <string name="tutorial_section_2_text">Look at the buttons right above your keyboard—these are your "Superpowers":\n\n• <b>FORMAT:</b> Tidy up messy code. It aligns everything perfectly so it looks clean.\n• <b>SNIPPETS:</b> Need a shortcut? Click this for pre-written pieces of code (like forms or tables) to save time.\n• <b>COMPILE:</b> Scans your code for "typos" or errors before you run it.\n• <b>RUN:</b> The most important button! It launches a live preview so you can see your website working in real-time.\n• <b>HISTORY:</b> Made a mistake? Go back in time! This shows your previous versions so you can undo any errors.</string>
 
     <string name="tutorial_section_3_title">🐘 3. Databases Made Easy (PHP &amp; SQL)</string>
     <string name="tutorial_section_3_text">And-Ide makes "remembering" data simple:\n\n• <b>The Logic (PHP):</b> Use PHP to handle form data or login logic. Always start with &lt;?php.\n• <b>The Memory (SQL):</b> Our app uses <b>SQLite</b> for lightning-fast, offline data. \n• <b>The Bridge:</b> You can use standard <b>MySQL</b> commands (like <i>mysqli_query</i>). We translate them for you automatically! \n\n<b>Try this:</b> Go to the Side Menu > <b>Database</b> to see your tables and test your SQL queries before writing them in code.</string>
@@ -70,7 +70,7 @@
 
     <!-- Login Activity -->
     <string name="login_welcome">Welcome Back</string>
-    <string name="login_subtitle">Sign in to your Pro Developer IDE</string>
+    <string name="login_subtitle">Sign in to your Developer IDE</string>
     <string name="hint_email">Email Address</string>
     <string name="hint_password">Password</string>
     <string name="cb_remember_me">Keep me signed in</string>
@@ -89,7 +89,7 @@
 
     <!-- User Agreement -->
     <string name="terms_and_conditions_title">Terms and Conditions</string>
-    <string name="terms_and_conditions_content">By using And-Ide, you agree to the following terms:\n\n1. <b>Usage:</b> This app is provided for educational and professional development purposes. You are responsible for the code you write and execute.\n\n2. <b>Privacy:</b> We respect your privacy. Your code is stored locally on your device unless you explicitly share or export it. Firebase Authentication is used to manage your account securely.\n\n3. <b>AI Assistant:</b> The "DDee" AI assistant uses Google Gemini. Do not share sensitive personal information in the chat.\n\n4. <b>Disclaimer:</b> The app is provided "as is" without warranty of any kind. The developers are not liable for any data loss or damages resulting from the use of this software.\n\n5. <b>Updates:</b> These terms may be updated occasionally. Continued use of the app constitutes acceptance of the new terms.</string>
+    <string name="terms_and_conditions_content">By using And-Ide, you agree to the following terms:\n\n1. <b>Usage:</b> This app is provided for educational and development purposes. You are responsible for the code you write and execute.\n\n2. <b>Privacy:</b> We respect your privacy. Your code is stored locally on your device unless you explicitly share or export it. Firebase Authentication is used to manage your account securely.\n\n3. <b>AI Assistant:</b> The "DDee" AI assistant uses Google Gemini. Do not share sensitive personal information in the chat.\n\n4. <b>Disclaimer:</b> The app is provided "as is" without warranty of any kind. The developers are not liable for any data loss or damages resulting from the use of this software.\n\n5. <b>Updates:</b> These terms may be updated occasionally. Continued use of the app constitutes acceptance of the new terms.</string>
     <string name="checkbox_agree_terms">I agree to the Terms and Conditions</string>
     <string name="error_must_agree_terms">You must agree to the terms and conditions to register.</string>
 
