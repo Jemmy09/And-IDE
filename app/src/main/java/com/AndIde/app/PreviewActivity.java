@@ -71,7 +71,7 @@ public class PreviewActivity extends AppCompatActivity {
         public String executeSql(String sql) {
             try {
                 String trimmedSql = sql.trim().toLowerCase();
-                // Professional Security: Block access to auth tables and system schema via word-boundary regex
+                // Security: Block access to auth tables and system schema via word-boundary regex
                 if (trimmedSql.matches(".*\\b(users|code_history|snippets|chat_history|sqlite_master|sqlite_temp_master|sqlite_sequence|drop|alter|truncate|delete)\\b.*")) {
                     android.util.Log.w("SecurityAudit", "Blocked unauthorized SQL access attempt in Preview: " + sql);
                     return "[{\"error\":\"Security Exception: Unauthorized database operation on internal tables.\"}]";

@@ -341,7 +341,7 @@ public class ChatActivity extends AppCompatActivity {
 
     private void generateImage(String prompt) {
         // We use a free-tier stable diffusion API or DALL-E if key is provided
-        // For this professional version, we'll use Polling via Pollinations.ai (Free/Fast)
+        // Use Polling via Pollinations.ai (Free/Fast)
         String imageUrl = "https://image.pollinations.ai/prompt/" + prompt.replace(" ", "%20") + "?width=1024&height=1024&nologo=true";
         
         new android.os.Handler().postDelayed(() -> {

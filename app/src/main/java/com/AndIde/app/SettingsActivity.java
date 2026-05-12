@@ -213,7 +213,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         editor.apply();
 
-        // Professional Async DB Update
+        // Async DB Update
         dbExecutor.execute(() -> {
             boolean success = dbHelper.updateUserProfile(userEmail, name, birthday, age, imageByteArray);
             runOnUiThread(() -> {

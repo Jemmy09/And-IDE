@@ -242,7 +242,7 @@ public class ProfileActivity extends AppCompatActivity {
         } catch (NumberFormatException ignored) {}
         final int age = tempAge;
 
-        // Professional Async DB Update for consistency
+        // Async DB Update for consistency
         java.util.concurrent.ExecutorService executor = java.util.concurrent.Executors.newSingleThreadExecutor();
         executor.execute(() -> {
             boolean success = dbHelper.updateUserProfile(userEmail, name, birthday, age, imageByteArray);

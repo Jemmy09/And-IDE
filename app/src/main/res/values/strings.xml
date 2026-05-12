@@ -18,7 +18,7 @@
     <string name="btn_sql_cheat_sheet">SQL CHEAT SHEET</string>
     <string name="sql_products_schema">CREATE TABLE IF NOT EXISTS products (\n  id INTEGER PRIMARY KEY AUTOINCREMENT,\n  name TEXT NOT NULL,\n  price REAL,\n  stock INTEGER\n);</string>
     <string name="ai_partner_title">🤖 4. Meet DDee, Your AI Partner</string>
-    <string name="pro_tips_title">💡 Pro Tips for Aspiring Devs:</string>
+    <string name="pro_tips_title">💡 Expert Tips for Aspiring Devs:</string>
     <string name="app_version_footer">Version 1.1.3 - Made with ❤️ for Aspiring Developers</string>
     <string name="developer_email">Jemmyfrancisco30@gmail.com</string>
     <string name="feedback_subject">And-Ide Developer Feedback</string>
@@ -50,7 +50,7 @@
     <string name="tutorial_section_4_title">🤖 4. Your AI Partner &amp; File Management</string>
     <string name="tutorial_section_4_text">• <b>Ask DDee (AI Chat):</b> Stuck on a bug? Open the Side Menu and talk to DDee. Our AI knows your code and can fix errors for you instantly.\n• <b>File Explorer:</b> Long-press any file in the Side Menu to Rename, Delete, or Duplicate it.\n• <b>Export (ZIP):</b> Ready to show the world? Use "Export Project" in the Side Menu to package your whole folder into a ZIP file, perfect for uploading to a real web host.\n• <b>Search/Replace:</b> Use the magnifying glass to find specific words in long files and replace them all at once.</string>
 
-    <string name="tutorial_pro_tips_title">💡 How to Code Like a Pro:</string>
+    <string name="tutorial_pro_tips_title">💡 How to Code Effectively:</string>
     <string name="tutorial_pro_tips_text">1. <b>Format Often:</b> Keep your code clean so it\'s easier to read.\n2. <b>Use Debug:</b> If your code doesn\'t work, click RUN and look for the red text—that tells you exactly what to fix.\n3. <b>Zero Setup:</b> You don\'t need a server or Wi-Fi. Everything in And-Ide works 100% offline.\n4. <b>Stay Curious:</b> Use the <b>SQL Cheat Sheet</b> in the Database section to learn new commands!</string>
     <string name="btn_lets_build">START CODING NOW! 🚀</string>
 

@@ -260,7 +260,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Correctly initialize the JS Interface for Database connectivity
         wvPreview.addJavascriptInterface(new WebAppInterface(this), "AndroidDB");
 
-        // Professional Exit Safety: Warn on unsaved changes when exiting the app
+        // Exit Safety: Warn on unsaved changes when exiting the app
         getOnBackPressedDispatcher().addCallback(this, new androidx.activity.OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
@@ -369,7 +369,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     applyHighlighting(s);
                 }
 
-                // Professional Debounce for Live Preview
+                // Debounce for Live Preview
                 previewHandler.removeCallbacks(previewRunnable);
                 previewRunnable = () -> updateLivePreview();
                 previewHandler.postDelayed(previewRunnable, 500); // Wait 500ms after last keystroke
@@ -1065,7 +1065,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(shareIntent);
     }
 
-    // Professional Database Bridge for the IDE
+    // Database Bridge for the IDE
     public class WebAppInterface {
         Context mContext;
 
@@ -1077,7 +1077,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         public String executeSql(String sql) {
             try {
                 String trimmedSql = sql.trim().toLowerCase();
-                // Professional Security: Block access to auth tables and system schema via word-boundary regex
+                // Security: Block access to auth tables and system schema via word-boundary regex
                 if (trimmedSql.matches(".*\\b(users|code_history|snippets|chat_history|sqlite_master|sqlite_temp_master|sqlite_sequence|drop|alter|truncate|delete)\\b.*")) {
                     android.util.Log.w("SecurityAudit", "Blocked unauthorized SQL access attempt: " + sql);
                     return "[{\"error\":\"Security Exception: Unauthorized database operation on internal tables.\"}]";

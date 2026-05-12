@@ -53,8 +53,7 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 ddeHolder.tvMessage.setVisibility(View.GONE);
                 ddeHolder.cardImage.setVisibility(View.VISIBLE);
                 
-                // Using Glide would be better, but for now we'll just use a simple loader logic
-                // For a professional app, Glide.with(context).load(url).into(iv) is best
+                // Load image using Glide
                 com.bumptech.glide.Glide.with(ddeHolder.ivGeneratedImage.getContext())
                         .load(message.getImageUrl())
                         .into(ddeHolder.ivGeneratedImage);
