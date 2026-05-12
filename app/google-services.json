@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "12771882396",
+    "project_id": "and-ide",
+    "storage_bucket": "and-ide.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12771882396:android:d117b3cf30e71f99898459",
+        "android_client_info": {
+          "package_name": "com.AndIde.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12771882396-ph84rb0fks11guiaah4tbgl4830rqtgm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.AndIde.app",
+            "certificate_hash": "94b0e9fa66374ce123098dee14bf76020a725892"
+          }
+        },
+        {
+          "client_id": "12771882396-a2pdkunlpko8pad5drt2961vfeilt5oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ0vfTDgzgfocq_Pm230zr1gGYgvF40cI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12771882396-a2pdkunlpko8pad5drt2961vfeilt5oh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/editor_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/pro_header_footer"
+        app:title="DDee AI Assistant"
+        app:titleTextColor="@color/pro_on_surface"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:elevation="4dp"/>
+
+    <!-- Skeleton Loading State -->
+    <LinearLayout
+        android:id="@+id/llSkeleton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/pro_header_footer"
+        android:visibility="gone">
+        <View
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@color/pro_surface"
+            android:layout_marginBottom="16dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="60dp"
+            android:background="@color/pro_surface"
+            android:layout_marginBottom="16dp"/>
+        <View
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@color/pro_surface"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        android:background="@color/pro_header_footer"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="@color/pro_header_footer"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/etChatInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Ask DDee for PHP/MySQL help..."
+            android:textColorHint="@color/pro_on_surface_dim"
+            android:padding="12dp"
+            android:background="@color/pro_surface"
+            android:textColor="@color/pro_on_surface"
+            android:textSize="14sp"
+            android:maxLines="4"/>
+
+        <ImageButton
+            android:id="@+id/btnSendChat"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginStart="8dp"
+            app:tint="@color/pro_accent"
+            android:contentDescription="@string/desc_send_message"/>
+    </LinearLayout>
+</LinearLayout>

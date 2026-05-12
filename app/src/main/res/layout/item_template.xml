@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/pro_surface"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTemplateName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Template Name"
+            android:textColor="@color/pro_accent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvTemplateDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description goes here..."
+            android:textColor="@color/pro_on_surface_dim"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnUseTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USE TEMPLATE"
+            android:textSize="12sp"
+            android:textColor="@color/pro_on_surface"
+            android:backgroundTint="@color/pro_header_footer"
+            style="@style/Widget.MaterialComponents.Button"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

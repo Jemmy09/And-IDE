@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/db_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/editor_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/db_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/pro_header_footer"
+        app:title="phpMyAdmin (Local)"
+        app:titleTextColor="@color/pro_on_surface"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:elevation="4dp"/>
+
+    <!-- SQL Query Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@color/pro_header_footer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/db_assistant_title"
+            android:textColor="@color/pro_accent"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:typeface="monospace"/>
+
+        <!-- Quick Help Chips -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginBottom="8dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnShowTables"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/btn_show_tables"
+                    android:textSize="10sp"
+                    android:padding="0dp"
+                    android:backgroundTint="@color/pro_surface"
+                    android:textColor="@color/pro_on_surface"
+                    android:layout_marginEnd="4dp"
+                    style="@style/Widget.MaterialComponents.Button"/>
+                <Button
+                    android:id="@+id/btnQuickShowAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/btn_select_users"
+                    android:textSize="10sp"
+                    android:padding="0dp"
+                    android:backgroundTint="@color/pro_surface"
+                    android:textColor="@color/pro_on_surface"
+                    android:layout_marginEnd="4dp"
+                    style="@style/Widget.MaterialComponents.Button"/>
+                <Button
+                    android:id="@+id/btnCreateSchema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/btn_create_web_schema"
+                    android:textSize="10sp"
+                    android:padding="0dp"
+                    android:backgroundTint="@color/pro_surface"
+                    android:textColor="@color/pro_on_surface"
+                    android:layout_marginEnd="4dp"
+                    style="@style/Widget.MaterialComponents.Button"/>
+                <Button
+                    android:id="@+id/btnQuickAddUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/btn_add_test_user"
+                    android:textSize="10sp"
+                    android:padding="0dp"
+                    android:backgroundTint="@color/pro_surface"
+                    android:textColor="@color/pro_on_surface"
+                    android:layout_marginEnd="4dp"
+                    style="@style/Widget.MaterialComponents.Button"/>
+                <Button
+                    android:id="@+id/btnQuickClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/btn_reset_table"
+                    android:textSize="10sp"
+                    android:padding="0dp"
+                    android:backgroundTint="#4B1111"
+                    android:layout_marginEnd="4dp"
+                    style="@style/Widget.MaterialComponents.Button"/>
+                <Button
+                    android:id="@+id/btnSqlGlossary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/btn_sql_cheat_sheet"
+                    android:textSize="10sp"
+                    android:padding="0dp"
+                    android:backgroundTint="@color/pro_accent"
+                    android:textColor="@color/pro_header_footer"
+                    style="@style/Widget.MaterialComponents.Button"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <EditText
+            android:id="@+id/etSqlQuery"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/pro_surface"
+            android:gravity="top"
+            android:hint="SELECT * FROM users;"
+            android:textColorHint="@color/pro_on_surface_dim"
+            android:textColor="@color/pro_on_surface"
+            android:padding="10dp"
+            android:typeface="monospace"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnExecuteSql"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/pro_accent"
+            android:textColor="@color/pro_header_footer"
+            style="@style/Widget.MaterialComponents.Button"/>
+    </LinearLayout>
+
+    <!-- Results Table -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/pro_header_footer">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/tlDbResults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+                <!-- Data will be populated here -->
+            </TableLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+
+</LinearLayout>

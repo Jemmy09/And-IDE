@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="Project Dashboard"
+            android:icon="@android:drawable/ic_menu_today" />
+        <item
+            android:id="@+id/nav_search"
+            android:title="Search in Project"
+            android:icon="@android:drawable/ic_menu_search" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="User Profile"
+            android:icon="@android:drawable/ic_menu_myplaces" />
+        <item
+            android:id="@+id/nav_run"
+            android:title="Run / Preview"
+            android:icon="@android:drawable/ic_media_play" />
+        <item
+            android:id="@+id/nav_editor"
+            android:title="Editor" />
+        <item
+            android:id="@+id/nav_database"
+            android:title="Database (SQL)" />
+        <item
+            android:id="@+id/nav_templates"
+            android:title="Code Templates" />
+        <item
+            android:id="@+id/nav_export"
+            android:title="Export Project (ZIP)" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="Send Feedback" />
+        <item
+            android:id="@+id/nav_ai_chat"
+            android:title="Ask DDee (AI)" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_tutorial"
+            android:title="How to Use (Tutorial)"
+            android:icon="@android:drawable/ic_menu_help" />
+        <item
+            android:id="@+id/nav_new_project"
+            android:title="New Professional Project"
+            android:icon="@android:drawable/ic_menu_add" />
+        <item
+            android:id="@+id/nav_open_project"
+            android:title="Open Project / File"
+            android:icon="@android:drawable/ic_menu_view" />
+        <item
+            android:id="@+id/nav_save_as"
+            android:title="Save As..."
+            android:icon="@android:drawable/ic_menu_save" />
+        <item
+            android:id="@+id/nav_live_preview"
+            android:title="Toggle Live Preview"
+            android:icon="@android:drawable/ic_menu_view" />
+        <item
+            android:id="@+id/nav_cloud_sync"
+            android:title="FTP/Cloud Sync"
+            android:icon="@android:drawable/ic_menu_upload" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+</menu>

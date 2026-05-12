@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ai_preview_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pro_header_footer">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ai_preview_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/pro_header_footer"
+        app:title="AI Suggested Changes"
+        app:titleTextColor="@color/pro_on_surface"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:elevation="4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTargetFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Target File: index.php"
+            android:textColor="@color/pro_on_surface_dim"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Original"
+                android:textColor="@color/pro_accent"
+                android:textSize="12sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/pro_surface"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:id="@+id/etOriginalCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:padding="8dp"
+                    android:textColor="@color/pro_on_surface_dim"
+                    android:textSize="12sp"
+                    android:typeface="monospace"
+                    android:focusable="false"
+                    android:clickable="false" />
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proposed (DDee)"
+                android:textColor="@color/pro_accent"
+                android:textSize="12sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/pro_surface">
+                <EditText
+                    android:id="@+id/etProposedCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:padding="8dp"
+                    android:textColor="@color/pro_on_surface"
+                    android:textSize="12sp"
+                    android:typeface="monospace" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discard"
+                android:backgroundTint="@color/pro_surface"
+                android:textColor="@color/pro_on_surface"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnApply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply Changes"
+                android:backgroundTint="@color/pro_accent"
+                android:textColor="@color/pro_header_footer"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

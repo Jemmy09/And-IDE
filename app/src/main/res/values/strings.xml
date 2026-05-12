@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">And-Ide</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Replace these with your actual IDs from Google/Facebook Developer Consoles -->
+    <string name="default_web_client_id">12771882396-a2pdkunlpko8pad5drt2961vfeilt5oh.apps.googleusercontent.com</string>
+
+    <!-- UI Strings -->
+    <string name="splash_subtitle">Mobile Studio for Aspiring Developers</string>
+    <string name="profile_default_title">Web Developer</string>
+    <string name="db_assistant_title">Web Dev SQL Assistant:</string>
+    <string name="btn_show_tables">SHOW TABLES</string>
+    <string name="btn_select_users">SELECT USERS</string>
+    <string name="btn_create_web_schema">CREATE WEB SCHEMA</string>
+    <string name="btn_add_test_user">ADD TEST USER</string>
+    <string name="btn_reset_table">RESET TABLE</string>
+    <string name="btn_sql_cheat_sheet">SQL CHEAT SHEET</string>
+    <string name="sql_products_schema">CREATE TABLE IF NOT EXISTS products (\n  id INTEGER PRIMARY KEY AUTOINCREMENT,\n  name TEXT NOT NULL,\n  price REAL,\n  stock INTEGER\n);</string>
+    <string name="ai_partner_title">🤖 4. Meet DDee, Your AI Partner</string>
+    <string name="pro_tips_title">💡 Pro Tips for Aspiring Devs:</string>
+    <string name="app_version_footer">Version 1.1.3 - Made with ❤️ for Aspiring Developers</string>
+    <string name="developer_email">Jemmyfrancisco30@gmail.com</string>
+    <string name="feedback_subject">And-Ide Developer Feedback</string>
+
+    <!-- About Activity -->
+    <string name="about_title">And-Ide</string>
+    <string name="about_version">v1.1.3</string>
+    <string name="about_description">The ultimate mobile IDE for PHP, HTML, CSS, JavaScript, and MySQL development. Built for programmers, by programmers.</string>
+    <string name="developer_name_label">Developer: Jemmy Francisco</string>
+    <string name="contact_email_label">Contact: Jemmyfrancisco30@gmail.com</string>
+    <string name="system_info_loading">System Info Loading...</string>
+    <string name="btn_send_feedback_with_info">Send Feedback with System Info</string>
+    <string name="btn_website">Website</string>
+    <string name="btn_facebook">Facebook</string>
+
+    <!-- Tutorial Activity Updated - Full Professional Guide -->
+    <string name="tutorial_header">🚀 Master And-Ide</string>
+    <string name="tutorial_subtitle">The Ultimate Step-by-Step Guide for New Developers</string>
+
+    <string name="tutorial_section_1_title">📱 1. Navigation &amp; Top Toolbar</string>
+    <string name="tutorial_section_1_text">Your workspace is designed for speed. Here is what the icons at the top do:\n\n• <b>Menu (☰):</b> Your "Command Center". Switch between the Editor, Database, and AI Chat.\n• <b>Save (💾):</b> Instantly saves your progress to your phone.\n• <b>Open (📂):</b> Import any .php, .html, or .js file from your device.\n• <b>Share (📤):</b> Send your current code to friends or colleagues via email or social apps.\n• <b>Tabs:</b> Just like a browser! Click any tab at the top to switch between multiple open files without losing your place.</string>
+
+    <string name="tutorial_section_2_title">🛠️ 2. The Powerful Action Bar</string>
+    <string name="tutorial_section_2_text">Look at the buttons right above your keyboard—these are your "Superpowers":\n\n• <b>FORMAT:</b> Tidy up messy code. It aligns everything perfectly so it looks professional.\n• <b>SNIPPETS:</b> Need a shortcut? Click this for pre-written pieces of code (like forms or tables) to save time.\n• <b>COMPILE:</b> Scans your code for "typos" or errors before you run it.\n• <b>RUN:</b> The most important button! It launches a live preview so you can see your website working in real-time.\n• <b>HISTORY:</b> Made a mistake? Go back in time! This shows your previous versions so you can undo any errors.</string>
+
+    <string name="tutorial_section_3_title">🐘 3. Databases Made Easy (PHP &amp; SQL)</string>
+    <string name="tutorial_section_3_text">And-Ide makes "remembering" data simple:\n\n• <b>The Logic (PHP):</b> Use PHP to handle form data or login logic. Always start with &lt;?php.\n• <b>The Memory (SQL):</b> Our app uses <b>SQLite</b> for lightning-fast, offline data. \n• <b>The Bridge:</b> You can use standard <b>MySQL</b> commands (like <i>mysqli_query</i>). We translate them for you automatically! \n\n<b>Try this:</b> Go to the Side Menu > <b>Database</b> to see your tables and test your SQL queries before writing them in code.</string>
+
+    <string name="tutorial_section_4_title">🤖 4. Your AI Partner &amp; File Management</string>
+    <string name="tutorial_section_4_text">• <b>Ask DDee (AI Chat):</b> Stuck on a bug? Open the Side Menu and talk to DDee. Our AI knows your code and can fix errors for you instantly.\n• <b>File Explorer:</b> Long-press any file in the Side Menu to Rename, Delete, or Duplicate it.\n• <b>Export (ZIP):</b> Ready to show the world? Use "Export Project" in the Side Menu to package your whole folder into a ZIP file, perfect for uploading to a real web host.\n• <b>Search/Replace:</b> Use the magnifying glass to find specific words in long files and replace them all at once.</string>
+
+    <string name="tutorial_pro_tips_title">💡 How to Code Like a Pro:</string>
+    <string name="tutorial_pro_tips_text">1. <b>Format Often:</b> Keep your code clean so it\'s easier to read.\n2. <b>Use Debug:</b> If your code doesn\'t work, click RUN and look for the red text—that tells you exactly what to fix.\n3. <b>Zero Setup:</b> You don\'t need a server or Wi-Fi. Everything in And-Ide works 100% offline.\n4. <b>Stay Curious:</b> Use the <b>SQL Cheat Sheet</b> in the Database section to learn new commands!</string>
+    <string name="btn_lets_build">START CODING NOW! 🚀</string>
+
+    <!-- Main Activity -->
+    <string name="hint_search">Search...</string>
+    <string name="hint_replace">Replace with...</string>
+    <string name="btn_replace_all">REPLACE ALL</string>
+    <string name="btn_format">FORMAT</string>
+    <string name="btn_history">HISTORY</string>
+    <string name="btn_snippets">SNIPPETS</string>
+    <string name="btn_compile">COMPILE</string>
+    <string name="btn_run">RUN</string>
+    <string name="default_filename">index.php</string>
+    <string name="default_status">UTF-8 | PHP/HTML</string>
+    <string name="default_console_output">Console output...</string>
+    <string name="hint_code_editor">&lt;?php\n// Write your code here...</string>
+
+    <!-- Login Activity -->
+    <string name="login_welcome">Welcome Back</string>
+    <string name="login_subtitle">Sign in to your Pro Developer IDE</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="cb_remember_me">Keep me signed in</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="or"> OR </string>
+    <string name="btn_google_login">Continue with Google</string>
+    <string name="tv_register">New to And-Ide? Create Account</string>
+
+    <!-- Accessibility Content Descriptions -->
+    <string name="desc_find_next">Find Next</string>
+    <string name="desc_close_search">Close Search</string>
+    <string name="desc_open_file">Open File</string>
+    <string name="desc_save_file">Save File</string>
+    <string name="desc_share_file">Share File</string>
+    <string name="desc_send_message">Send Message</string>
+
+    <!-- User Agreement -->
+    <string name="terms_and_conditions_title">Terms and Conditions</string>
+    <string name="terms_and_conditions_content">By using And-Ide, you agree to the following terms:\n\n1. <b>Usage:</b> This app is provided for educational and professional development purposes. You are responsible for the code you write and execute.\n\n2. <b>Privacy:</b> We respect your privacy. Your code is stored locally on your device unless you explicitly share or export it. Firebase Authentication is used to manage your account securely.\n\n3. <b>AI Assistant:</b> The "DDee" AI assistant uses Google Gemini. Do not share sensitive personal information in the chat.\n\n4. <b>Disclaimer:</b> The app is provided "as is" without warranty of any kind. The developers are not liable for any data loss or damages resulting from the use of this software.\n\n5. <b>Updates:</b> These terms may be updated occasionally. Continued use of the app constitutes acceptance of the new terms.</string>
+    <string name="checkbox_agree_terms">I agree to the Terms and Conditions</string>
+    <string name="error_must_agree_terms">You must agree to the terms and conditions to register.</string>
+
+    <!-- Account Deletion -->
+    <string name="btn_delete_account">Delete Account</string>
+    <string name="delete_account_dialog_title">Delete Account?</string>
+    <string name="delete_account_dialog_message">Are you sure you want to permanently delete your account? This action cannot be undone and all your data will be removed.</string>
+    <string name="btn_confirm_delete">DELETE PERMANENTLY</string>
+    <string name="account_deleted_success">Account deleted successfully.</string>
+    <string name="account_deleted_error">Failed to delete account. Please re-login and try again.</string>
+
+    <!-- Permissions Dialog -->
+    <string name="permissions_title">Permissions Required</string>
+    <string name="permissions_message">And-Ide requires certain permissions to provide a full development experience:\n\n• <b>Storage:</b> To save and open your code projects.\n• <b>Location:</b> To provide localized developer info in your profile.\n• <b>Camera:</b> To take profile pictures.\n\nPlease grant these permissions on the next screen.</string>
+    <string name="btn_grant_permissions">GRANT PERMISSIONS</string>
+</resources>
