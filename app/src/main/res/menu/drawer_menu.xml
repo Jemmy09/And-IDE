@@ -44,7 +44,7 @@
             android:icon="@android:drawable/ic_menu_help" />
         <item
             android:id="@+id/nav_new_project"
-            android:title="New Professional Project"
+            android:title="New Project"
             android:icon="@android:drawable/ic_menu_add" />
         <item
             android:id="@+id/nav_open_project"
