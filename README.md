@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Jemmy09/And-IDE/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" width="128" height="128" alt="And-IDE Logo">
+  <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" width="128" height="128" alt="And-IDE Logo">
 </p>
 
 <h1 align="center">And-IDE</h1>
 
 <p align="center">
-  <i>A humble, mobile-first workspace for web development on the go.</i>
+  <i>A professional, mobile-first workspace for web development on the go.</i>
 </p>
 
 <p align="center">
@@ -20,89 +20,75 @@
 
 ## 🚀 Welcome to And-IDE
 
-Hi! Welcome to **And-IDE**. This is a project I've been working on to make mobile web development feel a bit more natural. The goal was simple: create a workspace that lets you write, test, and manage code directly from your phone without the usual friction.
+**And-IDE** is a powerful, lightweight Integrated Development Environment (IDE) built specifically for Android. It allows you to build, test, and preview web projects (HTML, CSS, JS, PHP) and manage SQL databases entirely from your mobile device. 
 
-Whether you're fixing a bug on the bus or just want to try out a new idea while away from your computer, And-IDE is here to help you stay in the flow.
-
----
-
-## 🛠 What's inside?
-
-I've tried to include the essentials you need to stay productive without the desktop:
-
-### 1. The Multi-Tab Editor
-No more switching back and forth between files. Open multiple tabs just like you would on a computer.
-*   **Syntax Highlighting:** Makes your code easy to read and navigate.
-*   **Language Support:** Works with the core building blocks of the web (HTML, CSS, JS, PHP).
-
-### 2. DDe - Your Coding Companion
-DDe is a built-in assistant powered by AI. 
-*   **Stuck on a bug?** Ask DDe to help you find it.
-*   **Need an explanation?** DDe can walk you through how a specific piece of code works.
-*   **Feeling stuck?** Brainstorm new ideas or layouts directly in the chat.
-
-### 3. Database Manager
-Managing data on a phone is usually a headache. I've added a simple SQL interface so you can:
-*   View your tables and data.
-*   Run custom queries.
-*   Keep your project's backend organized without leaving the app.
-
-### 4. Search & Dashboard
-*   **Global Search:** Find any variable, tag, or string across your entire project instantly.
-*   **Project Stats:** See your total file count, total lines written, and how much storage you're using at a glance.
-
-### 5. Quick Templates
-Start faster with pre-written snippets for common tasks like:
-*   User login forms.
-*   Database connections.
-*   Portfolio structures.
+Perfect for developers who need to code while traveling, students learning web development, or professionals performing quick hotfixes without a laptop.
 
 ---
 
-## 🚀 Getting Started
+## 📲 How to Install on Android
 
-Follow these steps to get the app running on your own device:
+You can install And-IDE directly on your phone without needing a computer or a GitHub account.
 
-### Prerequisites
-*   **Android Studio** (the latest version is recommended).
-*   An Android device or emulator.
-*   **API Keys:** For DDe (the AI assistant) to work, you'll need an API key from [Google Gemini](https://ai.google.dev/) or [Groq](https://console.groq.com/keys).
-
-### Installation
-1.  **Clone the project:** 
-    ```bash
-    git clone https://github.com/Jemmy09/And-IDE.git
-    ```
-2.  **Open in Android Studio:** 
-    Wait for the Gradle sync to finish so all dependencies are ready.
-3.  **Add your keys:**
-    Open the `local.properties` file in your project's root folder and add these lines:
-    ```properties
-    gemini.api.key=YOUR_GEMINI_KEY
-    groq.api.key=YOUR_GROQ_KEY
-    ```
-4.  **Run it:** 
-    Press the green **Run** button in Android Studio to install the app on your device.
+1.  **Download the APK:** Go to the [Releases](https://github.com/Jemmy09/And-IDE/releases) page of this repository.
+2.  **Download Latest Version:** Click on the `.apk` file to download it to your phone.
+3.  **Enable Unknown Sources:** If prompted, allow your browser to "Install unknown apps" (this is standard for apps downloaded outside the Play Store).
+4.  **Install:** Open the downloaded file and tap **Install**.
+5.  **Open And-IDE:** Launch the app and start coding!
 
 ---
 
-## 💡 Using the app
+## 📖 Full Usage Guide
 
-*   **Creating Files:** Use the dashboard to start a new project or create individual files.
-*   **Editing:** Tap a file to open it. You can open several files at once and switch between them using the tabs at the top.
-*   **Asking DDe:** Tap the chat icon to talk to DDe. You can paste code there and ask for advice or troubleshooting help.
-*   **Managing Data:** Head over to the Database section to interact with your project's local storage using SQL.
+And-IDE makes mobile development easy. Here is how to use the core features:
+
+### 🌐 Web Development (HTML, CSS, JavaScript)
+1.  **Create a File:** Tap the **+** icon in the Sidebar and name it `index.html`.
+2.  **Write Code:** Use the editor to type your HTML. 
+    *   *Tip:* Use the **SNIPPETS** button for quick boilerplate code.
+3.  **Style it:** Create a `style.css` file and link it in your HTML.
+4.  **Preview:** Tap the **RUN** button. A split-screen or full-screen preview will appear showing your website live.
+
+### 🐘 PHP Development
+And-IDE features a built-in PHP runner for local testing.
+1.  **File Setup:** Create a file with a `.php` extension.
+2.  **Coding:** Use standard PHP tags: `<?php echo "Hello World"; ?>`.
+3.  **Execution:** Tap **RUN**. The app processes the PHP logic and displays the output in the integrated browser.
+
+### 🗄️ Database Management (SQL)
+Manage your data offline using the powerful SQL module.
+1.  **Open Database:** Swipe the Sidebar and select **Database**.
+2.  **Create Tables:** Use the **Web Dev Assistant** to quickly create a `users` or `products` table.
+3.  **Run Queries:** Type your SQL (e.g., `SELECT * FROM users`) and tap **Execute**. The results will appear in a professional table view.
+4.  **PHP Integration:** Use standard `mysqli` or `PDO` style commands in your PHP files to interact with this local database.
+
+### 🤖 AI Assistance (DDee)
+If you are stuck or have a bug:
+1.  **Ask DDee:** Tap the **Chat** icon.
+2.  **Explain Code:** Highlight a piece of code in the editor, long-press, and select **Explain Code**. DDee will open and tell you exactly what that code does.
+3.  **Auto-Fix:** Ask DDee to "Fix my PHP syntax" or "Generate a CSS navigation bar."
 
 ---
 
-## 👋 Why I built this
-I wanted a tool that didn't feel clunky or overloaded. Coding on a phone has its challenges, so I focused on making the most important features easy to reach. It’s built for people who want to keep building, even when they’re away from their main setup.
+## 🛠 Features for Pros
 
-## 🤝 Want to help?
-If you find a bug or have an idea for a feature that would make coding on mobile even better, I'd love to hear from you! 
-*   Feel free to **open an issue**.
-*   **Pull requests** are always welcome if you'd like to contribute code.
+*   **Multi-Tab Support:** Open multiple files and switch between them instantly.
+*   **Code Formatting:** One tap to clean up and indent your code.
+*   **Global Search:** Find any text across all your files.
+*   **Project Export:** Export your entire project as a `.ZIP` file to upload to a real server later.
+*   **Offline First:** No internet? No problem. The editor and database work 100% offline.
 
-Thanks for checking out And-IDE! I hope it helps you bring your ideas to life.
+---
 
-**Happy Coding!**
+## 🔒 Security & Privacy
+
+*   **Your Code, Your Device:** All files are stored locally.
+*   **Protected Files:** Sensitive configuration files (like API keys and Firebase settings) are strictly ignored by Git to ensure your environment remains private.
+*   **No Tracking:** We don't collect your code or personal data.
+
+---
+
+## 👋 About the Developer
+Created by **Jemmy Francisco**. Built for the community to empower mobile developers worldwide.
+
+**Happy Coding!** 🚀
