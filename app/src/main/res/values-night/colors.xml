@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Professional Dark Theme (Night) -->
+    <!-- Dark Theme (Night) -->
     <color name="pro_header_footer">#0F172A</color>
     <color name="pro_surface">#1E293B</color>
     <color name="pro_accent">#38BDF8</color>

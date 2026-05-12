@@ -10,7 +10,7 @@
         <item name="colorSecondaryVariant">@color/pro_accent</item>
         <item name="colorOnSecondary">@color/pro_header_footer</item>
 
-        <!-- Professional Edge-to-Edge -->
+        <!-- Edge-to-Edge -->
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowTranslucentStatus">false</item>
