@@ -5,7 +5,7 @@
 <h1 align="center">And-IDE</h1>
 
 <p align="center">
-  <i>A professional, mobile-first workspace for web development on the go.</i>
+  <i>A mobile-first workspace for web development on the go.</i>
 </p>
 
 <p align="center">
